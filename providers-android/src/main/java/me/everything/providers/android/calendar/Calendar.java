@@ -14,7 +14,7 @@ import me.everything.providers.core.IgnoreMapping;
  * Calendar entity
  *
  * @author sromku
- * // @see http://developer.android.com/reference/android/provider/CalendarContract.Calendars.html
+ *         // @see http://developer.android.com/reference/android/provider/CalendarContract.Calendars.html
  */
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class Calendar extends Entity {
@@ -34,10 +34,10 @@ public class Calendar extends Entity {
     @FieldMapping(columnName = Calendars.CALENDAR_ACCESS_LEVEL, physicalType = FieldMapping.PhysicalType.Int)
     public int calendarAccessLevel;
 
-    @FieldMapping(columnName = Calendars.CALENDAR_COLOR, canUpdate=true, physicalType = FieldMapping.PhysicalType.Int)
+    @FieldMapping(columnName = Calendars.CALENDAR_COLOR, canUpdate = true, physicalType = FieldMapping.PhysicalType.Int)
     public int calendarColor;
 
-    @FieldMapping(columnName = Calendars.CALENDAR_DISPLAY_NAME, canUpdate=true, physicalType = FieldMapping.PhysicalType.String)
+    @FieldMapping(columnName = Calendars.CALENDAR_DISPLAY_NAME, canUpdate = true, physicalType = FieldMapping.PhysicalType.String)
     public String displayName;
 
     @FieldMapping(columnName = Calendars.CALENDAR_TIME_ZONE, physicalType = FieldMapping.PhysicalType.String)
@@ -55,10 +55,10 @@ public class Calendar extends Entity {
     @FieldMapping(columnName = Calendars.OWNER_ACCOUNT, physicalType = FieldMapping.PhysicalType.String)
     public String ownerAccount;
 
-    @FieldMapping(columnName = Calendars.SYNC_EVENTS, physicalType = FieldMapping.PhysicalType.Int)
+    @FieldMapping(columnName = Calendars.SYNC_EVENTS, canUpdate = true, physicalType = FieldMapping.PhysicalType.Int)
     public int syncEvents;
 
-    @FieldMapping(columnName = Calendars.VISIBLE, physicalType = FieldMapping.PhysicalType.Int, logicalType = FieldMapping.LogicalType.Boolean)
+    @FieldMapping(columnName = Calendars.VISIBLE, canUpdate = true, physicalType = FieldMapping.PhysicalType.Int, logicalType = FieldMapping.LogicalType.Boolean)
     public boolean visible;
 
     @FieldMapping(columnName = Calendars.ACCOUNT_NAME, physicalType = FieldMapping.PhysicalType.String)
